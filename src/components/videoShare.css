@@ -1,0 +1,84 @@
+.card-header {
+  font-size: 25px;
+}
+
+.card-body {
+  height: 405px;
+}
+
+.card-footer {
+  font-size: 11px;
+}
+
+.card-button {
+  font-size: 20px;
+  border-radius: 100%;
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  bottom: 250px;
+  right: 180px;
+}
+
+.card-spinner {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  bottom: 250px;
+  right: 180px;
+}
+
+.card-video {
+  height: 300px;
+  max-height: 300px;
+  max-width: 430px;
+}
+
+.card-col-container-left {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.card-col-container-right {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.card-video-download-button {
+  margin-top: 10px;
+}
+
+.card-video-download-button-disabled {
+  margin-top: 10px;
+  cursor: not-allowed;
+}
+
+.card-badge-link {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 190px;
+  margin-top: 10px;
+  cursor: copy;
+}
+
+.card-badge-blank {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 190px;
+  margin-top: 10px;
+  cursor: not-allowed;
+}
+
+.card-copy-link-notification {
+  border-color: #17a2b8;
+  width: 100px;
+  height: 25px;
+}
+
+.card-tab > a {
+  font-size: 15px;
+	width: 33.3%;
+	color: #17a2b8;;
+}

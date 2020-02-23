@@ -1,0 +1,2 @@
+export const GET_VIDEO_DATA = 'GET_VIDEO_DATA';
+export const SEND_VIDEO_DATA = 'SEND_VIDEO_DATA';
