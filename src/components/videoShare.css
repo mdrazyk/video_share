@@ -35,13 +35,13 @@
 }
 
 .card-col-container-left {
-	display: flex;
-	justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .card-col-container-right {
-	display: flex;
-	justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .card-video-download-button {
@@ -79,6 +79,11 @@
 
 .card-tab > a {
   font-size: 15px;
-	width: 33.3%;
-	color: #17a2b8;;
+  width: 50%;
+  color: #17a2b8;
+}
+
+.current-video {
+  top: 50%;
+  position: relative;
 }

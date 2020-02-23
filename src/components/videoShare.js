@@ -10,7 +10,7 @@ import { SEND_VIDEO_DATA } from '../constants/chromeMessages';
 import {
   FETCH_VIDEO,
   CURRENT_VIDEO,
-  VIDEO_LIST,
+  // VIDEO_LIST,
 } from '../constants/videoSharePages';
 
 import {
@@ -33,6 +33,7 @@ const VideoImageShare = () => {
     videoShareReducer,
     initialVideoShareState,
   );
+
   const { tabUrl, videos, pageKey } = state;
   const videoData = videoDataSelector(state);
   const {
@@ -68,10 +69,12 @@ const VideoImageShare = () => {
     if (tabUrl) {
       storage.sync.get(tabUrl, result => {
         const { hdUrl, sdUrl } = result[tabUrl] || {};
-        const video = { tabUrl, hdUrl, sdUrl };
-        setPageKey(CURRENT_VIDEO);
-        updateVideoData(video);
-        setLoadingVideoData(false);
+        if ((hdUrl, sdUrl)) {
+          const video = { tabUrl, hdUrl, sdUrl };
+          setPageKey(CURRENT_VIDEO);
+          updateVideoData(video);
+          setLoadingVideoData(false);
+        }
       });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -91,7 +94,7 @@ const VideoImageShare = () => {
       });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [tabUrl]);
+  }, [tabUrl]);
 
   return (
     <DispatchContext.Provider value={dispatch}>
@@ -111,7 +114,8 @@ const VideoImageShare = () => {
                 title="Current Video"
                 disabled={!videoData}
               />
-              <Tab eventKey={VIDEO_LIST} title="Video List" />
+              {/*TODO Implement Video List*/}
+              {/* <Tab eventKey={VIDEO_LIST} title="Video List" /> */}
             </Tabs>
           </Card.Header>
           <Card.Body className="card-body">
@@ -119,9 +123,14 @@ const VideoImageShare = () => {
           </Card.Body>
           <Card.Footer className="text-muted card-footer">
             <p>
-              Remember. Facebook video URL expires after few hours and you will
-              not be able to watch it anymore. You can generate another one and
-              share it again.
+              1. Facebook video URL expires after a few hours, and you won't be
+              able to watch the video from that link anymore. However, you can
+              generate a new one and share it again.
+            </p>
+            <p>
+              2. The extension only supports downloading videos from closed
+              Facebook groups right now. However, It might change in the future
+              so stay tuned.
             </p>
           </Card.Footer>
         </Card>

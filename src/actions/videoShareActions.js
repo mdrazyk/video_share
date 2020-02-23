@@ -2,8 +2,8 @@ import {
   SET_VIDEO_DATA,
   UPDATE_VIDEO_DATA,
   SET_TAB_DATA,
-		SET_PAGE_KEY,
-		SET_LOADING_VIDEO_DATA,
+  SET_PAGE_KEY,
+  SET_LOADING_VIDEO_DATA,
 } from '../types/videoShareTypes';
 
 const videoShareActions = dispatch => {
@@ -29,7 +29,7 @@ const videoShareActions = dispatch => {
     dispatch({
       type: SET_TAB_DATA,
       tab: { url, id },
-				});
+    });
 
   const setLoadingVideoData = isLoadingVideoData =>
     dispatch({
@@ -41,8 +41,8 @@ const videoShareActions = dispatch => {
     setPageKey,
     setVideoData,
     updateVideoData,
-				setTabData,
-				setLoadingVideoData,
+    setTabData,
+    setLoadingVideoData,
   };
 };
 
