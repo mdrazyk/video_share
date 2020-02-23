@@ -1,0 +1,5 @@
+export const SET_VIDEO_DATA = 'SET_VIDEO_DATA';
+export const UPDATE_VIDEO_DATA = 'UPDATE_VIDEO_DATA';
+export const SET_TAB_DATA = 'SET_TAB_DATA';
+export const SET_PAGE_KEY = 'SET_PAGE_KEY';
+export const SET_LOADING_VIDEO_DATA = 'SET_LOADING_VIDEO_DATA';
