@@ -6,12 +6,12 @@ import {
 	SET_LOADING_VIDEO_DATA,
 } from '../types/videoShareTypes';
 
-import { FETCH_VIDEO } from '../constants/videoSharePages';
+import { VIDEO_DATA } from '../constants/videoSharePages';
 
 const initialVideoShareState = {
   videos: null,
   tabUrl: '',
-	pageKey: FETCH_VIDEO,
+	pageKey: VIDEO_DATA,
 	isLoadingVideoData: false,
 };
 
