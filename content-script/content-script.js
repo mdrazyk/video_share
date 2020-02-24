@@ -15,6 +15,11 @@ runtime.onMessage.addListener(async msg => {
     );
     const videoData = getVideoDataFromHtml(htmlData);
 
+    const { sdUrl, hdUrl } = videoData;
+    if (!sdUrl && !hdUrl) {
+      return runtime.sendMessage({ type: SEND_VIDEO_DATA });
+    }
+
     storage.sync.set({ [msg.url]: videoData }, () =>
       runtime.sendMessage({ type: SEND_VIDEO_DATA }),
     );

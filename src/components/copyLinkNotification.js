@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Toast } from 'react-bootstrap';
 
-import useMousePosition from './useMousePosition';
+import useMousePosition from './customHooks/useMousePosition';
 
 const CopyLinkNotification = ({ triggerCopyLinkNotification }) => {
   const position = useMousePosition();

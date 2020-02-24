@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const useMousePosition = () => {
-	const delay = new Date().getTime() + 1000;
+  const delay = new Date().getTime() + 1000;
   const [position, setPosition] = useState({ x: 0, y: 0, delay });
 
   useEffect(() => {
