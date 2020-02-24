@@ -12,7 +12,7 @@
 		"128": "favicon-120x120.png"
 	},
 	"permissions": [
-		"https://www.facebook.com/*",
+		"activeTab",
 		"storage"
 	],
 	"content_scripts": [
