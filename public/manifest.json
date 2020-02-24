@@ -1,7 +1,7 @@
 {
 	"name": "Video Share",
 	"description": "Chrome plugin for downloading videos from closed Facebook groups",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"manifest_version": 2,
 	"browser_action": {
 		"default_popup": "index.html"
@@ -12,7 +12,7 @@
 		"128": "favicon-120x120.png"
 	},
 	"permissions": [
-		"tabs",
+		"https://www.facebook.com/*",
 		"storage"
 	],
 	"content_scripts": [

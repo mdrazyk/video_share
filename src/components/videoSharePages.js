@@ -11,7 +11,7 @@ import { GET_VIDEO_DATA } from '../constants/chromeMessages';
 import {
   VIDEO_DATA,
   CURRENT_VIDEO,
-  VIDEO_LIST,
+  // VIDEO_LIST,
 } from '../constants/videoSharePages';
 
 import {

@@ -129,8 +129,8 @@ const VideoImageShare = () => {
             </p>
             <p>
               2. The extension only supports downloading videos from closed
-              Facebook groups right now. However, It might change in the future
-              so stay tuned.
+              Facebook groups right now. However, I might extend the
+              functionality to support more cases in the future.
             </p>
           </Card.Footer>
         </Card>
