@@ -9,7 +9,7 @@ import { StateContext, DispatchContext } from '../context';
 import { GET_VIDEO_DATA } from '../constants/chromeMessages';
 
 import {
-  FETCH_VIDEO,
+  VIDEO_DATA,
   CURRENT_VIDEO,
   VIDEO_LIST,
 } from '../constants/videoSharePages';
@@ -47,7 +47,7 @@ const VideoSharePages = ({ pageKey }) => {
   };
 
   return {
-    [FETCH_VIDEO]: <FetchVideoDataButton onClick={fetchVideoData} />,
+    [VIDEO_DATA]: <FetchVideoDataButton onClick={fetchVideoData} />,
     [CURRENT_VIDEO]: (
       <CurrentVideo
         videoData={videoData}

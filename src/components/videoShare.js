@@ -8,7 +8,7 @@ import VideoSharePages from './videoSharePages';
 
 import { SEND_VIDEO_DATA } from '../constants/chromeMessages';
 import {
-  FETCH_VIDEO,
+  VIDEO_DATA,
   CURRENT_VIDEO,
   // VIDEO_LIST,
 } from '../constants/videoSharePages';
@@ -108,7 +108,7 @@ const VideoImageShare = () => {
               activeKey={pageKey}
               onSelect={key => setPageKey(key)}
             >
-              <Tab eventKey={FETCH_VIDEO} title="Fetch Video" />
+              <Tab eventKey={VIDEO_DATA} title="Video Data" />
               <Tab
                 eventKey={CURRENT_VIDEO}
                 title="Current Video"
